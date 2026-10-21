@@ -1,0 +1,17 @@
+# Output reale — 21/10/2026 19:46
+# comando: python3 test_selfhosting_pipeline_completa_cases.py
+
+    PUNTO e' che l'intera catena regga insieme) ===
+OK exit= 0 (false&&qualunquecosa=0, corto-circuito reale attraverso l'INTERA pipeline da testo sorgente)
+
+=== 5. PIPELINE COMPLETA, espressione RICCA che usa OGNI livello di
+    precedenza contemporaneamente, da testo sorgente vero:
+    '1<2 && 3*4-1==11 || false' ===
+OK exit= 1 (espressione ricca a 3 livelli di precedenza, corretta end-to-end)
+
+=== 6. regressione: errori di parsing/tipo ANCORA rilevati
+    correttamente PRIMA di raggiungere l'abbassamento a MIR --
+    '(1+2' (parentesi mai chiusa) deve restare 254 ===
+OK exit= 254 (254=-2, errore di parsing rilevato PRIMA dell'abbassamento, la pipeline non prosegue su un albero invalido)
+
+TUTTI I CONTROLLI CORRETTI

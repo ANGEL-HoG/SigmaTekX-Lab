@@ -1,0 +1,16 @@
+# Output reale — 21/10/2026 19:46
+
+## Forge — suite di test
+file di test: 89
+test definiti: 465
+
+## IQ Vibe Code — motore di stato
+STATO PROGETTO
+  DONE         196
+  READY        27
+  TODO         12
+
+READY (in ordine di priorita'):
+
+## IQ Vibe Code — crate Rust
+9 crate nel workspace

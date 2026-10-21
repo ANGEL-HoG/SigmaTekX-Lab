@@ -1,0 +1,7 @@
+# Output reale — 21/10/2026 19:46
+# comando: curl -s -o /dev/null -w '%{http_code}' <rekor-entry>
+
+HTTP 200
+
+voce: 108e9186…aaac6a  (logIndex 3284607024, 16/10/2026)
+contenuto pubblico: hash SHA-512 + firma Ed25519 + data. Nessun codice.

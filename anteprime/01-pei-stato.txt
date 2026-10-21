@@ -1,0 +1,6 @@
+# Output reale — 21/10/2026 19:46
+# comando: ./bin/peimem stato
+
+db: /data/data/com.termux/files/home/.local/share/iqvibe/pei-memory.db
+embedder: semantico (all-MiniLM-L6-v2)
+integrità: OK
