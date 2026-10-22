@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-# Renderer una-tantum del video di presentazione (60s, 1080x1920, 10fps).
+# Renderer una-tantum del video di presentazione (60s, 1080x1920, 30fps).
 # Motivo dell'uso di Python: PIL e' l'unico renderer di immagini disponibile qui;
 # non fa parte del prodotto, e' uno strumento di produzione usa-e-getta.
 import subprocess, sys
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
-W, H, FPS = 1080, 1920, 10
+W, H, FPS = 1080, 1920, 30
 BG      = (11, 14, 20)
 PANEL   = (20, 24, 34)
 TEXT    = (230, 233, 239)
@@ -46,11 +46,12 @@ def progress(img_bar, t, total, color=ACCENT):
 
 def scene_title():
     img = new_frame(); d = ImageDraw.Draw(img)
-    center(d, 700, "SigmaTek X", f(96), TEXT)
-    d.line([(W/2 - 190, 830), (W/2 + 190, 830)], fill=ACCENT, width=6)
-    center(d, 880, "Sistemi AI costruiti", f(46), TEXT)
-    center(d, 940, "su un telefono.", f(46), TEXT)
-    center(d, 1040, "Nessun cloud. Nessuna emulazione.", f(32), MUTED)
+    center(d, 610, "MICHELE PALERMO", f(34), ACCENT)
+    center(d, 690, "SigmaTek X", f(96), TEXT)
+    d.line([(W/2 - 190, 820), (W/2 + 190, 820)], fill=ACCENT, width=6)
+    center(d, 870, "Sistemi AI costruiti", f(46), TEXT)
+    center(d, 930, "su un telefono.", f(46), TEXT)
+    center(d, 1030, "Nessun cloud. Nessuna emulazione.", f(32), MUTED)
     return img
 
 def scene_pei(n_lines):
@@ -160,7 +161,7 @@ def scene_end():
     center(d, 760, "Demo su richiesta.", f(64), TEXT)
     center(d, 880, "Nessun sorgente inviato.", f(40), ACCENT)
     d.line([(W/2 - 160, 990), (W/2 + 160, 990)], fill=(44, 50, 66), width=4)
-    center(d, 1050, "github.com/ANGEL-HoG", f(34), MUTED)
+    center(d, 1050, "github.com/ANGEL-HoG/SigmaTekX-Lab", f(32), MUTED)
     return img
 
 # --- montaggio -------------------------------------------------------------

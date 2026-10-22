@@ -1,6 +1,6 @@
 # Video — 60 secondi
 
-Formato: verticale 1080×1920, 10 fps, muto (o voce registrata sopra).
+Formato: verticale 1080×1920, 30 fps, muto (o voce registrata sopra).
 Regola unica: **si vedono solo output, mai sorgente leggibile.**
 
 ## Storyboard
