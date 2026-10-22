@@ -2,3 +2,5 @@
 *.log
 .DS_Store
 renders/
+__pycache__/
+*.pyc
